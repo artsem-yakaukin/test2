@@ -1,0 +1,55 @@
+:host {
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-rows: 150px auto 150px;
+  grid-template-areas:
+    "header header"
+    "sidenav content"
+    "footer footer";
+  height: 100%;
+}
+
+::ng-deep * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+app-header {
+  grid-area: header;
+}
+
+app-sidenav {
+  grid-area: sidenav;
+}
+
+app-content {
+  grid-area: content;
+}
+
+app-footer {
+  grid-area: footer;
+}
+
+::ng-deep .red {
+  background-color: red;
+}
+
+::ng-deep div {
+  background-color: white;
+  outline: 2px solid darkblue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  height: 100%;
+}
+
+::ng-deep button {
+  background-color: royalblue;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}

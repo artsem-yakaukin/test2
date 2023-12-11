@@ -1,0 +1,8 @@
+<div [ngClass]="{ red: counter.counter['Content'] >= 10 }">
+  <h1>Content</h1>
+  <div class="inside">
+    <p>Both counter increases on click</p>
+    <app-counter-btn [source]="'Content'"></app-counter-btn>
+    <app-counter-btn [source]="'Content'"></app-counter-btn>
+  </div>
+</div>
